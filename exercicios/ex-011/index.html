@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanhos de imagens</title>
+</head>
+<body>
+    <p>Nós podemos adaptar a imagem de acordo com os pixels da tela do usuário</p>
+    <p>
+        <picture>
+            <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="Foto Flexível">
+        </picture>
+    </p>
+    <h1>Incluindo áudios</h1>
+    <p>Também podemos incluir áudios <br>
+    <audio src="eden-albis.mp3" preload="metadata" autoplay controls></audio></p>
+    <audio preload="metadata" autoplay controls>
+        <source src="eden-albis.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta audio</p>
+        
+    </audio>
+
+</body>
+</html>

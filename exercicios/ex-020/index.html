@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <style>
+        #principal{
+            height: 300px;
+            width: 300px;
+            background-color: rgba(132, 130, 130, 0.684);
+        }
+        #principal>p{
+            display: none;
+        }
+        #principal:hover>p{
+            display: block;
+            background-color: blue;
+            color: white;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(43, 55, 55);
+            text-align: center;
+            display: inline-block;
+            border: 1px solid black;
+
+        }
+        .dif:hover{
+            background-color: black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elementos</h1>
+    <div id="principal">
+        Passe o mouse aqui
+        <p>Texto Escondido</p>
+    </div> <br>
+    <div class="dif">01</div>
+    <div>02</div>
+    <div class="dif">03</div>
+</body>
+</html>
