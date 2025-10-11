@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando com iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 95vh;
+            height: 350px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegue dentro de um iframe</h1>
+    <h2>Faça sua escolha</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eaque enim aspernatur molestias? Esse, dolorem neque vitae voluptate velit minima nobis eius! Ipsum et sed doloremque harum. Impedit, quo modi!</p>
+    <ul>
+        <li><a href="paginas/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis maiores accusantium soluta, aut adipisci recusandae tenetur ipsam impedit hic cupiditate tempore harum vitae. Modi ullam ex aspernatur fugit est. Quae!</p>
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1> <p> abra la cara fique a vontade<p/>" name="frame">
+        <p>Seu navegador não é compatível com iframe!</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, officia laborum rerum possimus aut odit libero nobis tenetur, ea voluptatem magni laboriosam modi ratione reiciendis ducimus a vero cupiditate quia.</p>
+    
+</body>
+</html>
