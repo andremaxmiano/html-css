@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Outros Controles</h1>
+    <form action="contrato.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+                <otpgroup aria-label="sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="ep">Espirito Santo</option>
+                </otpgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="f">
+            <datalist id="f">
+                <option value="">Administrador</option>
+                <option value="">professor</option>
+                <option value="">contador</option>
+            </datalist>
+        </p>
+    </form>
+    
+</body>
+</html>
