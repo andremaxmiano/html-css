@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste dos controles Radio e Checkbox</h1>
+    <form action="contrato.php" method="post">
+        <fieldset class="s">
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="isexm" value="M">
+                <label for="isexm">Masculino</label>
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="isexf" value="F">
+                <label for="isexf">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset class="e">
+            <legend>Esportes favoritos</legend>
+            <p>
+                <label for="iesfut">Futebol</label>
+                <input type="checkbox" name="esfut" id="iesfut">
+            </p>
+            <p>
+                <label for="iesbasq">Basquete</label>
+                <input type="checkbox" name="esbasq" id="iesbasq">
+            </p>
+            <p>
+                <label for="iesnat">Natação</label>
+                <input type="checkbox" name="esnat" id="iesnat">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Outros controles</legend>
+            <p>
+                <label for="icolor">Cor</label>
+                <input type="color" name="color" id="icolor">
+            </p>
+            <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1"
+            max="5" value="5">
+             <p>
+            <label for="ifoto">Foto</label>
+            <input type="file" name="Foto" id="ifoto">
+        </p>
+        </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+       
+    </form>
+    
+</body>
+</html>
