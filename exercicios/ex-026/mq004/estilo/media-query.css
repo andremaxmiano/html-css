@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@media print{
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: block; margin: auto;}
+    img#print{display: none; margin: auto;}
+    img#pc{display: none; margin: auto;}
+    img#tv{display: none; margin: auto;}
+
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none; margin: auto;}
+    img#print{display: none; margin: auto;}
+    img#pc{display: block; margin: auto;}
+    img#tv{display: none; margin: auto;}
+
+    
+}
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none; margin: auto;}
+    img#print{display: none; margin: auto;}
+    img#pc{display: none; margin: auto;}
+    img#tv{display: block; margin: auto;}
+    
+}
