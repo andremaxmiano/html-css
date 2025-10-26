@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
           <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <nav>
+        <nav id="itens">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -25,6 +25,28 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque blanditiis tempore sequi asperiores doloribus consectetur atque dolorum veniam. Aperiam quaerat eos obcaecati? Doloremque sint, optio officia natus iste nobis esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum veritatis quia dolor debitis iusto, consequuntur quisquam architecto, dolorem animi sint officia porro dolore doloremque corrupti fuga tempore eaque expedita.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ducimus quisquam tempore ad, voluptatibus quam labore iste ipsam vel non mollitia voluptas soluta nostrum eum qui ullam inventore veritatis accusamus.</p>
     </main>
-    
+    <script>
+        function mudouTamanho () {
+            if (window.innerWidth >= 570) {
+                itens.style.display = 'flex'
+            }else{
+                itens.style.display = 'none'
+            }
+            if (window.innerWidth >= 570) {
+                burger.style.display = 'none'
+            }else {
+                burger.style.display = 'inline'
+            }
+        }
+
+        function clickMenu() {
+             if (itens.style.display == 'flex') {
+                itens.style.display = 'none'
+             }else{
+                itens.style.display = 'flex'
+             }
+           
+        }
+    </script>
 </body>
 </html>

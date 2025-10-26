@@ -55,6 +55,10 @@ main{
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.403);
     text-align: justify;
 }
+header > span#burger {
+    display: none;
+    cursor: pointer;
+}
 @media screen and (max-width:570px) {
     header, header > nav {
         flex-flow: column wrap;
@@ -64,5 +68,11 @@ main{
     }
     header > nav > a{
         width: 90vw;
+    }
+    header > nav {
+        display: none;
+    }
+    header > span#burger {
+        display: inline;
     }
 }
